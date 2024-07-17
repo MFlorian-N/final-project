@@ -1,0 +1,55 @@
+
+.navbar {
+    background-color:orange; 
+    padding: 1rem;
+}
+
+
+.form-inline {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+
+.form-control {
+    border: 1px solid orange;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+
+.mr-sm-2 {
+    margin-right: 0.5rem;
+}
+
+
+.btn {
+    background-color:orange; 
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+
+.btn:hover {
+    background-color:#FF7F50 ; 
+}
+
+
+.row {
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
