@@ -7,10 +7,11 @@ const api = axios.create({
     }
 })
 
-export const getReceipesByIngredients = (ingredients, number=10, ranking=1, ignorePantry=true) => {
-    return api.get(`/recipes/findByIngredients?ingredients=${ingredients.join()}&number=${number}&ranking=${ranking}&ignorePantry=${ignorePantry}`)
+export const getReceipesByIngredients = (ingredients, number = 10, ranking = 1, ignorePantry = true) => {
+    return api.get(`/recipes/findByIngredients?apiKey=${process.env.REACT_APP_SPOONACULAR_KEY}&ingredients=${ingredients.join()}&number=${number}&ranking=${ranking}&ignorePantry=${ignorePantry}`)
 }
 
 export const getReceipeById = (receipeId) => {
-    return api.get(`/recipes/${receipeId}/information`)
+    return api.get(`/recipes/${receipeId}/information?apiKey=${process.env.REACT_APP_SPOONACULAR_KEY}`)
 }
+
