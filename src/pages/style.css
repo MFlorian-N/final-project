@@ -47,3 +47,7 @@
 .brand-font {
     font-family: cursive;
 }
+
+.custom-search-button:active {
+    background-color: orange!important;
+}
