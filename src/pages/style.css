@@ -1,7 +1,9 @@
 
 .navbar {
     background-color:orange; 
-    padding: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+   
 }
 
 
@@ -46,8 +48,58 @@
 
 .brand-font {
     font-family: cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .custom-search-button:active {
     background-color: orange!important;
+}
+
+.home-background {
+    background-color: #FF7F50;
+    min-height: 100vh;
+    padding: 1rem;
+    opacity: 0.7;
+   
+}
+
+.btn-home{
+    background-color:orange; 
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.recipe-card {
+    background-color: peachpuff;
+    border: 1px solid peachpuff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30rem;
+    margin: 0;
+    
+}
+
+.recipe-card img {
+    border-bottom: 1px solid #dee2e6;
+    
+    
+}
+
+.recipe-card .card-body {
+    padding: 1rem;
+}
+
+.recipe-card .card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: georgia;
+
 }
