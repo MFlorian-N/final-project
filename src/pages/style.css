@@ -57,11 +57,9 @@
 }
 
 .home-background {
-    background-color: #FF7F50;
+    background-color: #ff7f503b;
     min-height: 100vh;
-    padding: 1rem;
-    opacity: 0.7;
-   
+    padding: 1rem;   
 }
 
 .btn-home{
@@ -102,4 +100,25 @@
     line-height: 1.5;
     font-family: georgia;
 
+}
+
+.receipe-details-flag {
+    border: 1px solid red;
+    border-radius: 100px;
+    padding: 0.3rem;
+}
+
+.flag {
+    position: relative;
+    margin-left: 1.5rem;
+    color: green;
+    font-weight: 600;
+}
+
+.receipe-details-flag > div {
+    top: 50%;
+    border: 1px solid red;
+    right: 0;
+    left: 0;
+    transform: rotate(344deg);
 }
