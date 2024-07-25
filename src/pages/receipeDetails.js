@@ -5,6 +5,7 @@ import { getReceipeById } from "../services/spoonaciularApi"
 import Flag from "../components/flag";
 import './style.css'
 
+
 const ReceipeDetails = () => {
     const [data, setData] = useState();
     const { id } = useParams();
@@ -24,20 +25,20 @@ const ReceipeDetails = () => {
     }, [id])
 
     return (
-        <div className="home-background">
+        <div  className="home-background">
             <Navbar className="bg-light justify-content-between">
                 <Navbar.Brand href='#' className='brand-font'>RecipeRadar</Navbar.Brand>
                 <button className="btn-home"><Link to="/" className="nav-link">Back to Receipes List</Link></button>
             </Navbar>
-            <main style={{ maxWidth: "60rem", margin: "auto" }}>
+            <main style={{ maxWidth: "60rem", margin: "auto" }} className="page-details">
                 <h3 className="mt-3">{data?.title}</h3>
                 <div>
-                <span>Ready in: {data?.readyInMinutes}min</span>
-                <Flag label="vegan" is={data?.vegan} className=""/>
-                <Flag label="vegetarian" is={data?.vegetarian} />
+                    <span>Ready in: {data?.readyInMinutes}min</span>
+                    <Flag label="vegan" is={data?.vegan} className="" />
+                    <Flag label="vegetarian" is={data?.vegetarian} />
                 </div>
                 <hr />
-                <h4>Summary</h4>
+                <h4 className="sum-font">Summary</h4>
                 <p>
                     <img src={data?.image} alt={data?.title} style={{
                         float: "left",
@@ -48,8 +49,8 @@ const ReceipeDetails = () => {
                     <div dangerouslySetInnerHTML={{ __html: data?.summary }} />
                 </p>
                 <hr />
-                <h4>Ingredients</h4>
-                <ol>
+                <h4 className="ingr-font">Ingredients</h4>
+                <ul>
                     {data?.extendedIngredients.map(obj => (
                         <li key={obj.id}><span className="font-weight-bold">{obj.name}</span>:<span className="ms-2">{obj?.measures?.metric?.amount}{obj?.measures?.metric?.unitShort}</span></li>
                         // <Card className="recipe-card my-3 mx-auto">
@@ -60,12 +61,12 @@ const ReceipeDetails = () => {
                         //     </Card.Body>
                         // </Card>
                     ))}
-                </ol>
+                </ul>
                 <hr />
-                <h4>Steps</h4>
+                <h4 className="steps-font">Steps</h4>
                 <div dangerouslySetInnerHTML={{ __html: data?.instructions }}></div>
                 <hr />
-
+                <footer className="ft-page">RecipeRadar made with love</footer>
             </main>
         </div>
     )

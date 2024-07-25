@@ -1,80 +1,78 @@
-
 .navbar {
-    background-color:orange; 
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-   
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  opacity: 0.9;
 }
-
 
 .form-inline {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
-
 
 .form-control {
-    border: 1px solid orange;
-    border-radius: 4px;
-    padding: 0.5rem;
-    font-size: 1rem;
+  border: 1px solid orange;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
-
 
 .mr-sm-2 {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
-
 
 .btn {
-    background-color:orange; 
-    border: none;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    border-radius: 4px;
-    transition: background-color 0.2s;
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
 }
-
 
 .btn:hover {
-    background-color:#FF7F50 ; 
+  background-color: #f97d0069;
 }
 
-
 .brand-font {
-    font-family: cursive;
-    font-weight: bold;
-    font-size: 1.5rem;
+  color: #ffa500;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .custom-search-button:active {
-    background-color: orange!important;
+  background-color: orange !important;
 }
 
 .home-background {
-    background-color: #ff7f503b;
-    min-height: 100vh;
-    padding: 1rem;   
+  background-image: linear-gradient(
+    346deg,
+    rgba(241, 167, 25, 1) 0%,
+    rgba(247, 247, 247, 1) 95%
+  );
+  background-size: contain;
+  min-height: 100vh;
+  padding: 1rem;
 }
 
-.btn-home{
-    background-color:orange; 
-    border: none;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    border-radius: 4px;
-    transition: background-color 0.2s;
+.btn-home {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
 }
-
+/*
 .recipe-card {
     background-color: peachpuff;
     border: 1px solid peachpuff;
@@ -100,25 +98,46 @@
     line-height: 1.5;
     font-family: georgia;
 
-}
+} */
 
 .receipe-details-flag {
-    border: 1px solid red;
-    border-radius: 100px;
-    padding: 0.3rem;
+  border: 1px solid red;
+  border-radius: 100px;
+  padding: 0.3rem;
 }
 
 .flag {
-    position: relative;
-    margin-left: 1.5rem;
-    color: green;
-    font-weight: 600;
+  position: relative;
+  margin-left: 1.5rem;
+  color: green;
+  font-weight: 600;
 }
 
 .receipe-details-flag > div {
-    top: 50%;
-    border: 1px solid red;
-    right: 0;
-    left: 0;
-    transform: rotate(344deg);
+  top: 50%;
+  border: 1px solid red;
+  right: 0;
+  left: 0;
+  transform: rotate(344deg);
+}
+
+.ft-page {
+  text-align: center;
+  font-family: cursive;
+}
+
+.page-details {
+  font-family: "cursive";
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.sum-font,
+.ingr-font,
+.steps-font {
+  font-weight: bold;
+}
+
+.card {
+    opacity: 0.9;
 }

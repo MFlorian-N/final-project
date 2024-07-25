@@ -7,6 +7,7 @@ import './style.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { getReceipesByIngredients } from "../services/spoonaciularApi";
 import { useNavigate } from "react-router-dom";
+import background from "../assets/images/pexels-enginakyurt-1435895.jpg";
 
 function Home() {
     const [receipes, setReceipes] = useState();
@@ -43,11 +44,15 @@ function Home() {
     }
 
     return (
-        <div className="home-background">
-            <Navbar className="bg-light justify-content-between">
+        <div style={{backgroundImage: `url(${background})`, 
+                    
+      
+      
+        }} className="home-background">
+            <Navbar className="bg-light justify-content-between" >
                 <Navbar.Brand href='#' className='brand-font'>RecipeRadar</Navbar.Brand>
                 <Form className="d-flex justify-content-start align-items-center"  onSubmit={getReceipes}>
-                    <Form.Control
+                    <Form.Control className="bc"
                         type="text"
                         placeholder="Search recipe"
                         
@@ -74,6 +79,7 @@ function Home() {
                    </Card>
                 ))}
                 </div>
+                <footer className="ft-page">RecipeRadar made with love</footer>
             </main>
 
         </div>
