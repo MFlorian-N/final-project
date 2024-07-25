@@ -43,7 +43,7 @@ const ReceipeDetails = () => {
                     <img src={data?.image} alt={data?.title} style={{
                         float: "left",
                         borderRadius: "5px",
-                        width: "150px",
+                        width: "200px",
                         marginRight: "1rem",
                     }} />
                     <div dangerouslySetInnerHTML={{ __html: data?.summary }} />
@@ -66,7 +66,7 @@ const ReceipeDetails = () => {
                 <h4 className="steps-font">Steps</h4>
                 <div dangerouslySetInnerHTML={{ __html: data?.instructions }}></div>
                 <hr />
-                <footer className="ft-page">RecipeRadar made with love</footer>
+                <footer className="ft-page">RecipeRadar</footer>
             </main>
         </div>
     )

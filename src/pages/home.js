@@ -45,6 +45,7 @@ function Home() {
 
     return (
         <div style={{backgroundImage: `url(${background})`, 
+                    backgroundSize: "cover"
                     
       
       
@@ -79,7 +80,7 @@ function Home() {
                    </Card>
                 ))}
                 </div>
-                <footer className="ft-page">RecipeRadar made with love</footer>
+                <footer className="ft-page">RecipeRadar</footer>
             </main>
 
         </div>

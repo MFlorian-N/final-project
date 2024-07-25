@@ -11,7 +11,7 @@
 }
 
 .form-control {
-  border: 1px solid orange;
+  border: 1px solid #a60734;
   border-radius: 4px;
   padding: 0.5rem;
   font-size: 1rem;
@@ -22,7 +22,7 @@
 }
 
 .btn {
-  background-color: orange;
+  background-color: #a60734;
   border: none;
   color: white;
   padding: 0.5rem 1rem;
@@ -39,21 +39,21 @@
 }
 
 .brand-font {
-  color: #ffa500;
+  color: #a60734;
   font-family: cursive;
   font-weight: bold;
   font-size: 1.5rem;
 }
 
 .custom-search-button:active {
-  background-color: orange !important;
+  background-color: #a60734 !important;
 }
 
 .home-background {
   background-image: linear-gradient(
-    346deg,
-    rgba(241, 167, 25, 1) 0%,
-    rgba(247, 247, 247, 1) 95%
+    353deg,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(166, 7, 52, 0.9051995798319328) 95%
   );
   background-size: contain;
   min-height: 100vh;
@@ -61,7 +61,7 @@
 }
 
 .btn-home {
-  background-color: orange;
+  background-color: #a60734;
   border: none;
   color: white;
   padding: 0.5rem 1rem;
@@ -127,6 +127,13 @@
 }
 
 .page-details {
+    
+    opacity: 0.9;
+  border-radius: 50px;
+  background-color: white;
+  width: auto;
+  padding: 50px;
+  border: 5px white;
   font-family: "cursive";
   font-size: 20px;
   font-weight: normal;
@@ -139,5 +146,5 @@
 }
 
 .card {
-    opacity: 0.9;
+  opacity: 0.9;
 }
