@@ -9,6 +9,7 @@ function App() {
         <Route index element={<Home />}/>
         <Route path="/details/:id" element={<ReceipeDetails/>}/>
       </Routes>
+      <footer className="ft-page">RecipeRadar</footer>
     </Router>
   );
 }

@@ -61,9 +61,10 @@ function Home() {
             </Navbar>
             <main className="m-3">
             {(!receipes || receipes.length === 0) && (
-                    <p className="d-flex justify-content-center text-center w-content">
-                        Welcome to RecipeRadar!<br/> Just type in an ingredient you have on hand, and we'll help you find delicious recipes to make with it. Happy cooking!
-                    </p>
+                    <div className="d-flex justify-content-center text-center w-content flex-column">
+                        <p>Welcome to RecipeRadar!</p>
+                        <p className="mt-3">Just type in an ingredient you have on hand, and we'll help you find delicious recipes to make with it. Happy cooking!</p>
+                    </div>
                 )}
                 <div className="d-flex justify-content-center flex-wrap gap-3">
                     {receipes?.length > 0 && receipes.map(receipe => (
@@ -76,7 +77,6 @@ function Home() {
                         </Card>
                     ))}
                 </div>
-                <footer className="ft-page">RecipeRadar</footer>
             </main>
         </div>
     );

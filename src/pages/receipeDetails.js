@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { Navbar, Card } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import { getReceipeById } from "../services/spoonaciularApi"
@@ -9,7 +9,7 @@ import './style.css'
 const ReceipeDetails = () => {
     const [data, setData] = useState();
     const { id } = useParams();
-
+    const navigate = useNavigate();
     
 
     useEffect(() => {
@@ -26,13 +26,22 @@ const ReceipeDetails = () => {
 
     }, [id])
 
+    const handleRedirectWithStorageClear = () => {
+        sessionStorage.removeItem("receipes");
+        navigate("/");
+    }
+
     return (
         <div  className="home-background">
             <Navbar className="bg-light justify-content-between">
-                <Navbar.Brand href='#' className='brand-font'>RecipeRadar</Navbar.Brand>
-                <button className="btn-home"><Link to="/" className="nav-link">Back to Receipes List</Link></button>
+                <Navbar.Brand>
+                    <button className='brand-font' onClick={handleRedirectWithStorageClear}>RecipeRadar</button>
+                </Navbar.Brand>
+                <button className="btn-home">
+                    <Link to="/" className="nav-link">Back to Receipes List</Link>
+                </button>
             </Navbar>
-            <main style={{ maxWidth: "60rem", margin: "auto" }} className="page-details">
+            <main style={{ maxWidth: "60rem"}} className="page-details">
                 <h3 className="mt-3">{data?.title}</h3>
                 <div>
                     <span>Ready in: {data?.readyInMinutes}min</span>
@@ -68,7 +77,6 @@ const ReceipeDetails = () => {
                 <h4 className="steps-font">Steps</h4>
                 <div dangerouslySetInnerHTML={{ __html: data?.instructions }}></div>
                 <hr />
-                <footer className="ft-page">RecipeRadar</footer>
             </main>
         </div>
     )

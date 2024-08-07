@@ -43,6 +43,10 @@
   font-family: cursive;
   font-weight: bold;
   font-size: 1.5rem;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background: none;
 }
 
 .custom-search-button:active {
@@ -126,9 +130,8 @@
   font-family: cursive;
 }
 
-.page-details {
-    
-    opacity: 0.9;
+.page-details { 
+  opacity: 0.9;
   border-radius: 50px;
   background-color: white;
   width: auto;
@@ -137,6 +140,7 @@
   font-family: "gill sans";
   font-size: 20px;
   font-weight: normal;
+  margin: 1rem auto;
 }
 
 .sum-font,
