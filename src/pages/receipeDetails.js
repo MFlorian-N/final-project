@@ -10,6 +10,8 @@ const ReceipeDetails = () => {
     const [data, setData] = useState();
     const { id } = useParams();
 
+    
+
     useEffect(() => {
         if (id) {
             getReceipeById(id)
